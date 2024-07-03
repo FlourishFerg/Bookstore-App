@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavaproject.LogoController">
+    <children>
+        <VBox layoutY="7.0" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #4b0082;">
+            <children>
+                <ImageView fitHeight="196.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="580.0" top="60.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../../../../../../../../Desktop/log 2.jpg" />
+                    </image>
+                </ImageView>
+                <HBox prefHeight="108.0" prefWidth="900.0">
+                    <VBox.margin>
+                        <Insets left="150.0" top="109.0" />
+                    </VBox.margin>
+                    <children>
+                        <Text fill="MISTYROSE" strokeType="OUTSIDE" strokeWidth="0.0" text="       Your Digital bookstore" wrappingWidth="897.3367252349854">
+                            <font>
+                                <Font name="Arial Italic" size="72.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+                <Button fx:id="button_getstarted" mnemonicParsing="false" prefHeight="52.0" prefWidth="918.0" style="-fx-background-color: #00ff7f;" text="Get Started">
+                    <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookstoreapp.SignInController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="324.0" style="-fx-background-color: #4b0082;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="143.0" layoutX="75.0" layoutY="34.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <Image url="@../../../../../../../../Desktop/log 3.jpg"/>
+                </ImageView>
+                <Label layoutX="45.0" layoutY="230.0" prefHeight="34.0" prefWidth="202.0" text="Your Digital Bookstore" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="800.0" prefWidth="979.0">
+            <children>
+                <TextField fx:id="Username" layoutX="40.0" layoutY="60.0" prefHeight="41.0" prefWidth="270.0" promptText="Username" />
+                <TextField fx:id="Password" layoutX="40.0" layoutY="131.0" prefHeight="42.0" prefWidth="270.0" promptText="Password" />
+                <Label layoutX="49.0" layoutY="191.0" prefHeight="26.0" prefWidth="202.0" text="Your favourite Bookstore?">
+                    <font>
+                        <Font name="Arial Bold" size="14.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="rb_bookstore" layoutX="49.0" layoutY="227.0" mnemonicParsing="false" text="Your digital bookstore">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="rb_others" layoutX="49.0" layoutY="254.0" mnemonicParsing="false" text="Others">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </RadioButton>
+                <Button fx:id="button_signup" layoutX="124.0" layoutY="292.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #4b0082;" text="Sign up" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="39.0" layoutY="352.0" prefHeight="18.0" prefWidth="181.0" text="Already have an account?">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_login" layoutX="207.0" layoutY="348.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@../../../../../../../../Desktop/styles.css" text="Log in" textFill="#1f11dc" underline="true">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
